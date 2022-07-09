@@ -92,11 +92,13 @@ int main()
 							printf("Erro Nº %d, após o @ deve ser um caractere -> %c\n",indice_erro+1,erro_email[indice_erro]);
 						}else
 							printf("Erro Nº %d, caractere invalido -> %c\n",indice_erro+1,erro_email[indice_erro]);
-							
 					;
 				}
 				indice_erro++;
 			}
 		}
-	
+	if(flag == 0)
+		printf("Email válido!");
+	else
+		printf("Email invalido!");
 }
